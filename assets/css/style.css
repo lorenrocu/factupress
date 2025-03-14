@@ -1,0 +1,305 @@
+/* Estilo global para dar un aspecto moderno */
+.factuspress-awesome-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden; /* Para recortar esquinas redondeadas en contenido interno */
+  }
+  
+  /* Encabezado con gradiente y texto claro */
+  .factuspress-awesome-table thead tr {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+    text-align: left;
+  }
+  
+  /* Celdas del encabezado */
+  .factuspress-awesome-table thead th {
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  /* Celdas del cuerpo */
+  .factuspress-awesome-table tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #ececec;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  
+  /* Alternar color en filas pares para mayor legibilidad */
+  .factuspress-awesome-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Efecto al pasar el cursor sobre la fila */
+  .factuspress-awesome-table tbody tr:hover {
+    background-color: #eef7ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo para la última fila de la tabla si deseas algo especial */
+  .factuspress-awesome-table tbody tr:last-of-type td {
+    border-bottom: none; /* Elimina la línea en la última fila */
+  }
+  
+  /* Ajustes en pantallas pequeñas: scroll horizontal */
+  @media (max-width: 768px) {
+    .factuspress-awesome-table {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    .factuspress-awesome-table thead,
+    .factuspress-awesome-table tbody,
+    .factuspress-awesome-table th,
+    .factuspress-awesome-table td,
+    .factuspress-awesome-table tr {
+      display: block;
+    }
+  
+    /* Ajustes para que el encabezado se mantenga “fijado” en dispositivos móviles */
+    .factuspress-awesome-table thead tr {
+      position: relative;
+    }
+  }
+  
+
+  /*********************************************
+ * Estilos para el formulario de búsqueda
+ *********************************************/
+.factuspress-search-form {
+    display: flex;
+    flex-wrap: wrap;          /* Permite que los label-input se acomoden en varias líneas */
+    gap: 15px;                /* Espacio entre cada par label-input */
+    align-items: flex-end;    /* Alinea botones e inputs al final */
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .factuspress-search-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #333;
+    min-width: 140px;         /* Un ancho mínimo para uniformar */
+  }
+  
+  .factuspress-search-form label input {
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .factuspress-search-form label input:focus {
+    border-color: #6777ef;    /* Color al enfocar */
+    outline: none;
+  }
+  
+  /* Botón de filtrar */
+  .factuspress-search-form .button.button-primary {
+    margin-top: 22px;         /* Para alinear con los campos */
+    background: linear-gradient(45deg, #ff5e62, #ff9966);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: background 0.3s;
+  }
+  
+  .factuspress-search-form .button.button-primary:hover {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+  }
+  
+  /*********************************************
+   * Estilos para la paginación
+   *********************************************/
+  .factuspress-pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .factuspress-pagination .button {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    color: #fff !important;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: background 0.3s;
+  }
+  
+  .factuspress-pagination .button:hover {
+    background: linear-gradient(45deg, #5b86e5, #36d1dc);
+  }
+  
+  .factuspress-pagination p {
+    margin: 0;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  /* Ejemplo de estilos para el formulario de búsqueda */
+.factuspress-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.factuspress-search-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  min-width: 140px;
+}
+
+.factuspress-search-form label input,
+.factuspress-search-form label select {
+  margin-top: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.factuspress-search-form label input:focus,
+.factuspress-search-form label select:focus {
+  border-color: #6777ef;
+  outline: none;
+}
+
+/* Botón de filtrar */
+.factuspress-search-form .button.button-primary {
+  margin-top: 22px;
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+
+.factuspress-search-form .button.button-primary:hover {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+}
+
+/* Contenedor principal */
+.factuspress-settings-page {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 850px; /* Ajusta el ancho máximo si deseas */
+  margin-top: 20px;
+}
+
+/* Título principal */
+.factuspress-settings-page h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* El formulario */
+.factuspress-settings-form {
+  margin-top: 15px;
+}
+
+/* Filas de la tabla */
+.factuspress-settings-form .form-table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Encabezado de cada fila */
+.factuspress-settings-form .form-table th {
+  width: 220px; /* Ajusta el ancho */
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 0;
+  vertical-align: middle;
+  color: #333;
+}
+
+/* Celdas de contenido */
+.factuspress-settings-form .form-table td {
+  padding: 10px 0;
+}
+
+/* Inputs y select */
+.factuspress-settings-form .form-table input[type="text"],
+.factuspress-settings-form .form-table input[type="password"],
+.factuspress-settings-form .form-table select {
+  width: 100%;
+  max-width: 400px;  /* Ajusta el ancho máximo para no ser enorme */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Hover/focus en los campos */
+.factuspress-settings-form .form-table input[type="text"]:focus,
+.factuspress-settings-form .form-table input[type="password"]:focus,
+.factuspress-settings-form .form-table select:focus {
+  border-color: #0073aa; /* Color de enfoque WP */
+  outline: none;
+}
+
+/* El texto descriptivo debajo del campo */
+.factuspress-settings-form .form-table .description {
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Botón principal */
+.factuspress-settings-form .button-primary {
+  background: linear-gradient(45deg, #36d1dc, #5b86e5);
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 18px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.factuspress-settings-form .button-primary:hover {
+  background: linear-gradient(45deg, #5b86e5, #36d1dc);
+  color: #fff;
+}

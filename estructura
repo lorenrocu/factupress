@@ -1,0 +1,14 @@
+FACTUPRESS/
+├─ assets/
+│  ├─ css/
+│  │  └─ style.css 
+│  └─ js/
+│     └─ settings.js
+├─ includes/
+│  ├─ admin/
+│  │  ├─ admin-menu.php
+│  │  ├─ invoices-page.php
+│  │  └─ settings-page.php
+│  ├─ api/
+│  └─ db/
+├─ factuspress.php 
